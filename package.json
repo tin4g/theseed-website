@@ -1,9 +1,9 @@
 {
-  "name": "maxemitchell-portfolio",
-  "description": "A portfolio website for maxemitchell",
+  "name": "theseed-website",
+  "description": "A portfolio website for theseed",
   "version": "0.5.0",
-  "repository": "https://github.com/maxemitchell/portfolio",
-  "author": "Max Mitchell <maxemitchell@gmail.com>",
+  "repository": "https://github.com/tin4g/theseed-website",
+  "author": "Ting Gong <designer9418@icloud.com>",
   "dependencies": {
     "@loadable/component": "^5.13.1",
     "@types/react-helmet": "^6.0.0",

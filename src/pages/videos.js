@@ -5,16 +5,18 @@ import Layout from '../components/Layout'
 import Video from '../components/Video'
 
 const Videos = ({ data }) => {
-  const youtubeVideos = data.allYoutubeVideo.edges
+  // const youtubeVideos = data.allYoutubeVideo.edges
 
   return (
     <Layout>
       <SEO title="Videos" />
       <div className="w-full max-w-5xl mx-auto">
-
         <div className="flex w-full flex-wrap justify-center items-end mt-8">
+          <p className="w-full text-center text-3xl sm:text-4xl lg:text-5xl font-light">
+            [TheSeed][PLACEHOLDER]
+          </p>
 
-          {youtubeVideos.map(({ node: youtubeVideo }) => {
+          {/* {youtubeVideos.map(({ node: youtubeVideo }) => {
             return (
               <div
                 className="flex flex-no-wrap w-full md:w-1/2 justify-center items-center pb-6 px-4"
@@ -34,9 +36,8 @@ const Videos = ({ data }) => {
                 </div>
               </div>
             )
-          })}
+          })} */}
         </div>
-
       </div>
     </Layout>
   )
@@ -44,16 +45,16 @@ const Videos = ({ data }) => {
 
 export default Videos
 
-export const query = graphql`
-  query Videos {
-    allYoutubeVideo {
-      edges {
-        node {
-          title
-          description
-          videoId
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query Videos {
+//     allYoutubeVideo {
+//       edges {
+//         node {
+//           title
+//           description
+//           videoId
+//         }
+//       }
+//     }
+//   }
+// `

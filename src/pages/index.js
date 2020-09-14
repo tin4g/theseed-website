@@ -12,7 +12,7 @@ const Index = ({ data }) => {
   const profilePicture = data.contentfulSiteData.featuredImage
   const artboards = data.allContentfulArtboard.edges
   const photoCollections = data.allContentfulPhotoCollection.edges
-  const youtubeVideos = data.allYoutubeVideo.edges
+  // const youtubeVideos = data.allYoutubeVideo.edges
   const githubRepos = data.githubData.data.viewer.repositories.nodes
 
   return (
@@ -20,7 +20,13 @@ const Index = ({ data }) => {
       <SEO title="Home" />
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex w-full flex-wrap sm:flex-no-wrap mt-6 sm:mt-8 justify-center">
-          <Link
+          <div className="flex w-full flex-wrap justify-center mt-3">
+            <p className="w-full text-center text-3xl sm:text-4xl lg:text-5xl font-light">
+              [TheSeed][PLACEHOLDER]
+            </p>
+          </div>
+
+          {/* <Link
             to="/about/"
             className="picture-border-sm-1 mx-10 mt-2 sm:mt-0 sm:mx-0 w-full sm:w-3/5 max-w-xl hover:picture-border-sm-2 duration-500"
           >
@@ -96,7 +102,7 @@ const Index = ({ data }) => {
                 creative code
               </Link>
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex w-full flex-wrap justify-center mt-3">
@@ -130,7 +136,11 @@ const Index = ({ data }) => {
         <div className="flex w-full flex-wrap justify-center">
           <Header variant="3">recent video</Header>
 
-          {youtubeVideos.map(({ node: youtubeVideo }) => {
+          <p className="w-full text-center text-3xl sm:text-4xl lg:text-5xl font-light">
+            [TheSeed][PLACEHOLDER]
+          </p>
+
+          {/* {youtubeVideos.map(({ node: youtubeVideo }) => {
             return (
               <div className="w-full h-64 md:h-96 lg:h-128 mx-4 mb-5 mt-4 picture-border-sm-1">
                 <Video
@@ -140,7 +150,7 @@ const Index = ({ data }) => {
                 />
               </div>
             )
-          })}
+          })} */}
         </div>
 
         <div className="flex w-full flex-wrap justify-center">
@@ -212,15 +222,6 @@ export const query = graphql`
         }
       }
     }
-    allYoutubeVideo(limit: 1) {
-      edges {
-        node {
-          title
-          description
-          videoId
-        }
-      }
-    }
     githubData {
       data {
         viewer {
@@ -240,3 +241,73 @@ export const query = graphql`
     }
   }
 `
+
+// export const query = graphql`
+//   query Index {
+//     contentfulSiteData {
+//       featuredImage {
+//         fluid(maxHeight: 620) {
+//           ...GatsbyContentfulFluid_withWebp
+//         }
+//       }
+//     }
+//     allContentfulArtboard(
+//       limit: 2
+//       sort: { fields: artboardDate, order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           title
+//           slug
+//           artboard {
+//             fluid(maxWidth: 1100) {
+//               ...GatsbyContentfulFluid_withWebp
+//             }
+//           }
+//         }
+//       }
+//     }
+//     allContentfulPhotoCollection(
+//       limit: 4
+//       sort: { fields: collectionDate, order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           title
+//           slug
+//           featuredImage {
+//             fluid(maxHeight: 520) {
+//               ...GatsbyContentfulFluid_withWebp
+//             }
+//           }
+//         }
+//       }
+//     }
+//     allYoutubeVideo(limit: 1) {
+//       edges {
+//         node {
+//           title
+//           description
+//           videoId
+//         }
+//       }
+//     }
+//     githubData {
+//       data {
+//         viewer {
+//           repositories {
+//             totalCount
+//             nodes {
+//               description
+//               name
+//               url
+//               stargazers {
+//                 totalCount
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

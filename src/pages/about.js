@@ -12,7 +12,9 @@ const About = ({}) => {
       <SEO title="About" />
       <div className="flex flex-wrap w-full max-w-6xl mx-auto justify-between items-center">
         <div className="w-full font-manrope text-left text-base sm:text-lg font-thin leading-snug md:w-1/2 px-6 lg:px-8">
-          <p className="w-full mt-2 sm:mt-4">
+          <p className="w-full mt-2 sm:mt-4">[TheSeed][PLACEHOLDER]</p>
+
+          {/* <p className="w-full mt-2 sm:mt-4">
             In case it still wasn't clear, my name is <strong>Max</strong>.
           </p>
           <p className="w-full mt-3 sm:mt-5">
@@ -30,7 +32,7 @@ const About = ({}) => {
           </p>
           <p className="w-full mt-3 sm:mt-5">
             Yes, I realize how basic the above interests sound.
-          </p>
+          </p> */}
         </div>
 
         <div className="w-full md:w-1/2">
@@ -39,7 +41,7 @@ const About = ({}) => {
         </div>
 
         <a
-          href="mailto:maxemitchell@gmail.com"
+          href="mailto:tg@p6js.org"
           className="mx-auto flex flex-no-wrap justify-center items-center mt-8 mb-2 hover:text-themeBlue hover:border-corners duration-300"
         >
           <MailLogo className="w-12 h-12" />

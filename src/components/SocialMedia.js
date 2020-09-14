@@ -8,7 +8,7 @@ const SocialMedia = () => {
   return (
     <div className="flex flex-wrap sm:flex-no-wrap w-full justify-evenly items-baseline sm:justify-center font-manrope font-medium text-base md:text-lg mb-6 mt-3">
       <a
-        href="https://www.instagram.com/_maxemitchell_"
+        href="https://www.instagram.com"
         target="_blank"
         className="flex flex-no-wrap mt-3 text-themeOffWhite hover:text-themeBlue hover:border-corners rounded-tr-lg rounded-bl-lg duration-300 items-center mr-5"
       >
@@ -16,7 +16,7 @@ const SocialMedia = () => {
         <p className="ml-2">Instagram</p>
       </a>
       <a
-        href="https://github.com/maxemitchell"
+        href="https://github.com"
         target="_blank"
         className="flex flex-no-wrap mt-3 text-themeOffWhite hover:text-themeBlue hover:border-corners rounded-tr-lg rounded-bl-lg duration-300 items-center mr-5"
       >
@@ -24,7 +24,7 @@ const SocialMedia = () => {
         <p className="ml-2">Github</p>
       </a>
       <a
-        href="https://www.linkedin.com/in/maxemitchell/"
+        href="https://www.linkedin.com"
         target="_blank"
         className="flex flex-no-wrap mt-3 text-themeOffWhite hover:text-themeBlue hover:border-corners rounded-tr-lg rounded-bl-lg duration-300 items-center mr-5"
       >
@@ -32,7 +32,7 @@ const SocialMedia = () => {
         <p className="ml-2">LinkedIn</p>
       </a>
       <a
-        href="https://www.youtube.com/channel/UC9HSIRP_CkJJznkRd3E0-ZA"
+        href="https://www.youtube.com"
         target="_blank"
         className="flex flex-no-wrap mt-5 text-themeOffWhite hover:text-themeBlue hover:border-corners rounded-tr-lg rounded-bl-lg duration-300 items-"
       >

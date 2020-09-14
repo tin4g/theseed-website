@@ -9,9 +9,7 @@ const Navigation = () => {
     query {
       logoHoriz: file(relativePath: { eq: "logo_horiz_crop_transparent.png" }) {
         childImageSharp {
-          fluid(
-            traceSVG: { background: "#000000", color: "#0bbcd6" }
-          ) {
+          fluid(traceSVG: { background: "#000000", color: "#0bbcd6" }) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -26,7 +24,7 @@ const Navigation = () => {
     >
       <Link to="/" className="flex w-1/2 md:hidden mb-3 mt-1">
         <Img
-          alt="Max Mitchell"
+          alt="TheSeed"
           fluid={data.logoHoriz.childImageSharp.fluid}
           className="w-full"
         />
@@ -42,7 +40,7 @@ const Navigation = () => {
 
         <Link to="/" className="hidden md:flex md:w-4/12 md:mr-6">
           <Img
-            alt="Max Mitchell"
+            alt="TheSeed"
             fluid={data.logoHoriz.childImageSharp.fluid}
             className="w-full"
           />

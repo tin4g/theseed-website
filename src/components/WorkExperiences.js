@@ -6,6 +6,13 @@ const WorkExperiences = () => {
     <div className="px-6">
       <Experience
         variant={'top'}
+        header={'[TheSeed][PLACEHOLDER]'}
+        date={'January 2020 - Present'}
+        body={'[TheSeed][PLACEHOLDER]'}
+      />
+
+      {/* <Experience
+        variant={'top'}
         header={'Synchrony Financial / Emerging Technology Intern'}
         date={'January 2020 - Present'}
         body={"Currently working on a React Data Analytics platform built with AWS S3, Lambda, and EMR."}
@@ -44,7 +51,7 @@ const WorkExperiences = () => {
         header={'Lane Tech High School'}
         date={'August 2011 - June 2017'}
         body={'Began the LTAC program for 7th and 8th grade and ended up staying for six years. Special props to the Innovation and Creation Lab, Physical Computing Lab, and Photography room.'}
-      />
+      /> */}
     </div>
   )
 }
